@@ -1,0 +1,165 @@
+.shopcategory-banner {
+    display: block;
+    margin: 30px auto;
+    width: 80%;
+}
+
+.shopcategory-filters,
+.shopcategory-indexSort {
+    display: flex;
+    margin: 0px 170px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shopcategory-filters {
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+
+.shopcategory-sort {
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: 1px solid #888;
+}
+
+.shopcategory-indexSort p span {
+    font-weight: 600;
+}
+
+.shopcategory-products {
+    width: 90%;
+    /* max-width: 1360px; */
+    justify-content: center;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+
+}
+
+.shopcategory-loadmore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    width: 200px;
+    height: 60px;
+    border-radius: 75px;
+    background: #ededed;
+    color: #787878;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@media (max-width:1280px) {
+    .shopcategory-banner {
+        margin: 20px auto;
+        width: 90%;
+    }
+
+    .shopcategory-filters {
+        margin: 0px 60px;
+    }
+
+    .shopcategory-indexSort {
+        width: 90%;
+        margin: auto;
+    }
+
+    .shopcategory-sort {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .shopcategory-indexSort p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:800px) {
+    .shopcategory-banner {
+        width: 95%;
+    }
+
+    .shopcategory-loadmore {
+        margin: 60px auto;
+        width: 150px;
+        height: 40px;
+        font-size: 13px;
+    }
+}
+
+
+.shopcategory-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto;
+}
+
+.shopcategory-pagination-item {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    background: #fff;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.shopcategory-pagination-item:hover {
+    background: #f3f3f3;
+}
+
+.shopcategory-pagination-item.active {
+    background: #000;
+    color: #fff;
+}
+
+
+/* Ẩn checkbox mặc định */
+.checkbox-custom {
+    -webkit-appearance: none;
+    /* Tắt kiểu dáng mặc định trên Chrome, Safari */
+    -moz-appearance: none;
+    /* Tắt kiểu dáng mặc định trên Firefox */
+    appearance: none;
+    /* Tắt kiểu dáng mặc định trên các trình duyệt khác */
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ccc;
+    /* Viền của checkbox */
+    border-radius: 4px;
+    /* Góc bo tròn */
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Đổi màu nền khi checkbox được chọn (checked) */
+.checkbox-custom:checked {
+    background-color: orange;
+    /* Màu nền khi checked */
+    border-color: orange;
+    /* Màu viền khi checked */
+}
+
+/* Thêm dấu tích vào checkbox khi checked */
+.checkbox-custom:checked::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    /* Màu của dấu tích */
+    border-radius: 2px;
+}
